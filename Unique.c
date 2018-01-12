@@ -5,7 +5,6 @@ int main(){
 	
 	int a[100],b[100];
 	int i,j,num,un,count=0;
-printf("enter the number of strings\n");
 scanf("%d",&num);
 printf("\n\n");
 for(i=0;i<num;i++)
@@ -27,9 +26,12 @@ for(j=0;j<num;j++){
 
 }
 
- 
+if(num!=count){
 for(j=0;j<count;j++){
 	printf(" %d ",b[j]);
+}
+}else
+{printf("Unique");
 }
 getch();
 return 1;
